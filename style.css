@@ -64,6 +64,30 @@ header > * {
   align-self: center;
   top: 20px;
   box-shadow: 3px 3px rgba(0,0,0,0.1);
+  animation: disc1 4s 1 alternate ease backwards 200ms; 
+}
+.hero-disc-container:hover{
+  animation-play-state: paused;
+}
+@keyframes disc1 {
+    0%{
+      transform:translate(-1200px);
+    }
+    70%{
+      transform:translate(0);
+    }
+    75%{
+      transform:scale(1.08);
+    }    
+    82%{
+      transform:scale(1);
+    }
+    87%{
+      transform:scale(1.08);
+    } 
+    100%{
+      transform:scale(1);
+    }
 }
 .hero-disc-h3 {
   font-size: 32px;
