@@ -7,16 +7,22 @@
 
 /* HEADER */
 header {
-  border-top: 40px solid #F0DACD;
+  border-top: 40px solid #f0dacd;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 32px;
+  z-index: 2;
 }
 header > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#header{
+  position: sticky;
+  top: 0px;
 }
 .header-break {
   width: 10%;
@@ -40,7 +46,7 @@ header > * {
 }
 
 .header-nav a:hover {
-  color: #BF8B70
+  color: #bf8b70;
 }
 
 /* HERO */
@@ -54,40 +60,40 @@ header > * {
   width: 100%;
 }
 .hero-disc-container {
-  background-color:white;
+  background-color: white;
   width: 920px;
   height: 67px;
   border-radius: 62px;
-  border: 4px solid #C9B079;
+  border: 4px solid #c9b079;
   margin: auto;
   position: absolute;
   align-self: center;
   top: 20px;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  animation: disc1 4s 1 alternate ease backwards 200ms; 
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  animation: disc1 4s 1 alternate ease backwards 200ms;
 }
-.hero-disc-container:hover{
+.hero-disc-container:hover {
   animation-play-state: paused;
 }
 @keyframes disc1 {
-    0%{
-      transform:translate(-1200px);
-    }
-    70%{
-      transform:translate(0);
-    }
-    75%{
-      transform:scale(1.08);
-    }    
-    82%{
-      transform:scale(1);
-    }
-    87%{
-      transform:scale(1.08);
-    } 
-    100%{
-      transform:scale(1);
-    }
+  0% {
+    transform: translate(-1200px);
+  }
+  70% {
+    transform: translate(0);
+  }
+  75% {
+    transform: scale(1.08);
+  }
+  82% {
+    transform: scale(1);
+  }
+  87% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .hero-disc-h3 {
   font-size: 32px;
@@ -116,12 +122,12 @@ header > * {
   padding: 15px;
 }
 .coll-card {
-  background-color:white;
+  background-color: white;
   width: 392px;
   height: 510px;
   margin: 30px;
   border-radius: 28px;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .coll-card-img {
   background-color: #f7f2ec;
@@ -144,7 +150,7 @@ header > * {
 .coll-card:hover {
   background-color: #f0dacd;
   cursor: pointer;
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 
 /* FAVORITES */
@@ -154,13 +160,13 @@ header > * {
   padding-bottom: 180px;
 }
 .fav-titlecard {
-  background-color:white;
+  background-color: white;
   width: 568px;
   height: 67px;
   border-radius: 62px;
-  border: 4px solid #C9B079;
+  border: 4px solid #c9b079;
   margin: auto;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .fav-titlecard > * {
   display: flex;
@@ -181,7 +187,7 @@ header > * {
   padding-top: 30px;
 }
 .fav-card {
-  background-color:white;
+  background-color: white;
   width: 302px;
   height: 375px;
   border-radius: 37px;
@@ -191,7 +197,7 @@ header > * {
   flex-direction: column;
   border: 8px solid white;
   padding-bottom: 15px;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .fav-card-img {
   background-color: #f7f2ec;
@@ -216,12 +222,12 @@ header > * {
 .fav-card:hover {
   background-color: #f0dacd;
   cursor: pointer;
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 
 /* OUR SNUGGLERS */
 #oursnugglers {
-  background-color: #E1EDE9;
+  background-color: #e1ede9;
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -235,8 +241,8 @@ header > * {
   padding-top: 30px;
 }
 .snugglers-card {
-  background-color:white;
-  border: 4px solid #C9B079;
+  background-color: white;
+  border: 4px solid #c9b079;
   width: 378px;
   height: 215px;
   border-radius: 31px;
@@ -244,7 +250,7 @@ header > * {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .snugglers-card-img {
   width: 60px;
@@ -275,13 +281,13 @@ header > * {
   padding-bottom: 180px;
 }
 .new-titlecard {
-  background-color:white;
+  background-color: white;
   width: 568px;
   height: 67px;
   border-radius: 62px;
-  border: 4px solid #C9B079;
+  border: 4px solid #c9b079;
   margin: auto;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .new-titlecard > * {
   display: flex;
@@ -302,7 +308,7 @@ header > * {
   padding-top: 30px;
 }
 .new-card {
-  background-color:white;
+  background-color: white;
   width: 302px;
   height: 375px;
   border-radius: 37px;
@@ -312,7 +318,7 @@ header > * {
   flex-direction: column;
   border: 8px solid white;
   padding-bottom: 15px;
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 .new-card-img {
   background-color: #f7f2ec;
@@ -330,12 +336,12 @@ header > * {
 .new-card:hover {
   background-color: #f0dacd;
   cursor: pointer;
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 
 /* FOOTER-INFO */
-#footer{
-  background-color: #F0DACD;
+#footer {
+  background-color: #f0dacd;
   padding-top: 90px;
 }
 .footer-header > * {
@@ -347,8 +353,8 @@ header > * {
   font-size: 36px;
   padding-bottom: 20px;
 }
-.footer-header-line{
-  background-color: #C9B079;
+.footer-header-line {
+  background-color: #c9b079;
   width: 85%;
   height: 3px;
 }
@@ -358,7 +364,7 @@ header > * {
 }
 .footer-row {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding-bottom: 90px;
 }
 .footer-col {
@@ -371,11 +377,11 @@ header > * {
   position: relative;
 }
 .footer-col h4::before {
-  content:'';
+  content: "";
   width: 70px;
   height: 2px;
   position: absolute;
-  background-color: #C9B079;
+  background-color: #c9b079;
   bottom: -10px;
 }
 .footer-col ul {
@@ -392,10 +398,10 @@ header > * {
   transition: 0.2s;
 }
 .footer-col ul li a:hover {
-  color: #BF8B70;
+  color: #bf8b70;
 }
 .footer-newsletter-p {
-  font-size: 18px; 
+  font-size: 18px;
 }
 .inputemail {
   border: none;
@@ -407,7 +413,7 @@ header > * {
 }
 .inputsubmit {
   padding: 0 10px;
-  background-color: #BF8B70;
+  background-color: #bf8b70;
   border: none;
   width: 270px;
   height: 45px;
@@ -421,7 +427,7 @@ header > * {
   display: flex;
   justify-content: space-between;
   padding-top: 5px;
-  padding-bottom: 5px
+  padding-bottom: 5px;
 }
 .copy {
   font-size: 18px;
@@ -434,6 +440,6 @@ header > * {
   margin: 18px;
   transition: 0.2s;
 }
-.socialicons i:hover{
-  color: #BF8B70
+.socialicons i:hover {
+  color: #bf8b70;
 }
